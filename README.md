@@ -397,13 +397,13 @@ era GoldenAge{
 
 Friends and Villains are special declarations that accomplish specific aims. 
 
-Friend Statements instruct the compiler to grant access to sub-classes/power/archetypes/abilties and friendly objects. 
+Friend Statements grant an object access to another object's hidden types like friendly variables, sub-objects, or other language features.
 
 ```
 define MyClass as Friend for MyClassIWantAcessTo; //MyClass now has access to all the hidden Subtypes as it is a friend.
 ```
 
-Villain Statements instruct the compiler to use a specific method for coercion. You can only define Villains for objects in the same era.
+Villain Statements define the behavior for coercion for one object to another object. You can only define Villains for objects in the same era and only once.
 ```
 define MyClass as Villain for MyClassIWantToCoerceToMyClass{
   MyClass ToVillain(MyClassIWantToCoerceToMyClass class){
@@ -412,11 +412,18 @@ define MyClass as Villain for MyClassIWantToCoerceToMyClass{
 };
 ```
 
-An object can be both a Friend and a Villain to the same object, but the compiler will do errors.
+An object can be both a Friend and a Villain to the same object. These are called Frenemies and you can define them together using the following syntax:
+```
+define MyClass as Frenemy for MyClassIWantToCoerceToMyClass{
+  MyClass ToVillain(MyClassIWantToCoerceToMyClass class){
+    return neo MyClass(class);
+  }
+};
+```
 
 ## Splash 12: Globals
 
-Similar to Friends and Villains, you can also define a Class as a Global. This will let it be accessible to all other objects.
+Similar to Friends and Villains, you can also define a Class as a Global. This will let it be accessible to all other objects. All Global Functions must be Purple.
 
 ```
 define Url as Global{
