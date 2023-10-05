@@ -114,6 +114,8 @@ dynamic desc = Season.man.Spring.description;
 
 In Super (TM), classes operate similar to classes in other languages with two major differences: Origins and Inheritance
 
+### Origins
+
 First let's go over origins, every class has an Origin that takes in a backstory object. backstory is a reserved keyword and type.
 
 ```
@@ -141,6 +143,8 @@ RunTime os = backstory.os.runtime;
 ```
 
 The Backstory helps the Super (TM) Language avoid the usage of Macros and provide static information on how the application is running.
+
+### Inheritance
 
 Now let's go over the main feature of Super (TM): Inheritance. In Super (TM), a class cannot call any of it's own functions outside of it's origin.
 ```
