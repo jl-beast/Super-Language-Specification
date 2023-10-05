@@ -197,7 +197,7 @@ Due to the behavior of Super's (TM) Inheritance system, Access Modifiers do not 
 
 There're a ton more to discover! so get hacking!
 
-Splash 5: Color Modifiers
+## Splash 6: Color Modifiers
 
 Super (TM) does not have a GC, so we use Borrow Checking. In many languages, for their borrow checking they use explicit typing, however, in Super (TM), we use colors to allow the programmer to focus on a group of functionality instead of trying to figure out all the special typing and syntax. Colors will adjust the compiler rules for the borrow checker to auto-coerce things into their proper types after compiling. There're 4 colors at this time.
 
@@ -227,7 +227,7 @@ red url ToUrl(attached white panel url){
 
 Every Class, Ability, Power, Function, etc needs a Color, however, stating colors all the time is annoying. If you specify a Class as having a color, all functions will default to that color unless otherwise stated, parameters will default to their Functions color by default. Classes, Abilities, and Powers will default to their Era's Color by default as well.
 
-## Splash 6: Archetypes
+## Splash 7: Archetypes
 
 In Super, a class can only inherit from one class, however it is obvious that sometimes we want to have items be stored with specific functions for things like the strategy pattern.
 
@@ -305,7 +305,7 @@ Human human = coerce neo ChuckTheRedeemed[currentBackstory](father, mother); //T
 Bull bull = coerce neo ChuckTheRedeemed[currentBackstory](father, mother); //This will work with the new implementation.
 ```
 
-## Splash 7: Sidekicks
+## Splash 8: Sidekicks
 
 Sometimes when defining classes, archetypes, abilities, powers, functions, etc... you want to template it for further reuse with different definitions. 
 This is where sidekicks come in. Sidekicks define out the object and allow for reuse.
@@ -337,7 +337,7 @@ class AncientTreeMan<A(Treeman requires MyArchetype, MyClass)>
 AncientTreeMan<int> ancient = neo AncientTreeMan<int>(); //This will not compile as int is not of MyArchetype or MyClass
 ```
 
-## Splash 8: Coercion
+## Splash 9: Coercion
 
 If you have used other languages, you are aware of type casting and pattern matching. In Super, these are combined into a singular syntax called Coercion. 
 
@@ -366,7 +366,7 @@ VillainClass a = coerce heroClassObj; //Calls the Villain Function to turn our h
 
 Coercion is incredibly dangerous and serious as a language feature, use it wisely.
 
-## Splash 9: Eras
+## Splash 10: Eras
 
 As I pass through my incarnations in every age and race, 
 I make my proper prostrations to the Namespace.
@@ -380,7 +380,7 @@ era GoldenAge{
 }
 ```
 
-## Splash 10: Friends and Villains
+## Splash 11: Friends and Villains
 
 Friends and Villains are special declarations that accomplish specific aims. 
 
@@ -401,7 +401,7 @@ define MyClass as Villain for MyClassIWantToCoerceToMyClass{
 
 An object can be both a Friend and a Villain to the same object, but the compiler will do errors.
 
-## Splash 11: Globals
+## Splash 12: Globals
 
 Similar to Friends and Villains, you can also define a Class as a Global. This will let it be accessible to all other objects.
 
@@ -434,7 +434,7 @@ url d = Standard::Url.From("http://super.dev");
 url e = (neo Url(schemaOverride: "https")).From("http://super.dev");
 ```
 
-## Splash 12: Async (Calls/Callouts)
+## Splash 13: Async (Calls/Callouts)
 
 To call a Blue Function, you need to use Call, elsewise a blue function will be wrapped into a universe object. 
 You can merge Universes together using the Multiverse Global.
@@ -452,7 +452,7 @@ blue void DoOtherBlueThing(){
 }
 ```
 
-## Splash 13: Weaknesses
+## Splash 14: Weaknesses
 
 Sometimes, our program will arrive at points wherein it has no idea what exactly to do, for this we need to denote that as a weakness of our program.
 
