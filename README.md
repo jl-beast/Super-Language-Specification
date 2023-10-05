@@ -193,7 +193,7 @@ This helps users create clean, reusable code and probably speeds up the compiler
 
 ## Splash 5: Access Modifiers
 
-Due to the behavior of Super's (TM) Inheritance system, Access Modifiers do not do anything, however, we have included them as a means to assist with the spinybacked-orbweaver-sense (SOS) (TM). The Compiler will also give warnings when using something that is marked with the improper access modifiers. The following are the common access modifiers, there're a few more defined in the spec, but they are secret:
+Due to the behavior of Super's (TM) Inheritance system, Access Modifiers do not do anything, however, we have included them as a means to assist with the spinybacked-orbweaver-sense (SOS) (TM). The Compiler will also give warnings when using something that is marked with the improper access modifiers. The following are the common access modifiers, there're a few more defined in the spec somewhere around here, but they are secret:
 
 - heroic (default access modifier, available to everything Super (TM) without issue.)
 - secret (something hidden from the SOS, but still can be accessed by using coerce statements, see below.)
