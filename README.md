@@ -208,9 +208,9 @@ There're a ton more to discover! so get hacking!
 Super (TM) does not have a GC, so we use Borrow Checking. In many languages, for their borrow checking they use explicit typing, however, in Super (TM), we use colors to allow the programmer to focus on a group of functionality instead of trying to figure out all the special typing and syntax. Colors will adjust the compiler rules for the borrow checker to auto-coerce things into their proper types after compiling. There're 4 colors at this time.
 
 Colors:
-- Red (Standard Mutable State, Synchronous, has complex rules interacting with Blue.)
-- White (Pure Immutable State, Synchronous, works easily with Blue.)
-- Blue (Asynchronous Safe State, Asynchronous, needs specific considerations.)
+- Red (Standard Mutable State, Synchronous, Memory Inefficient)
+- White (Pure Immutable State, Synchronous, Memory Efficient)
+- Blue (Asynchronous Safe State, Asynchronous)
 - Green (Optimized for Green Threads, Asynchronous)
 - Purple (Used with Globals, allows for Global Safety)
 
@@ -232,6 +232,13 @@ red url ToUrl(attached white panel url){
 ```
 
 Every Class, Ability, Power, Function, etc needs a Color, however, stating colors all the time is annoying. If you specify a Class as having a color, all functions will default to that color unless otherwise stated, parameters will default to their Functions color by default. Classes, Abilities, and Powers will default to their Era's Color by default as well.
+
+```
+red class Gorilla inherits Animal{
+    origin[backstory]() => super();
+    void DoGorillaThing(int number); //This is a Red Function and all Params are Red.
+}
+```
 
 ## Splash 7: Archetypes
 
