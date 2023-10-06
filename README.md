@@ -205,7 +205,7 @@ There're a ton more to discover! so get hacking!
 
 ## Splash 6: Color Modifiers
 
-Super (TM) does not have a GC, so we use Borrow Checking. In many languages, for their borrow checking they use explicit typing, however, in Super (TM), we use colors to allow the programmer to focus on a group of functionality instead of trying to figure out all the special typing and syntax. Colors will adjust the compiler rules for the borrow checker to auto-coerce things into their proper types after compiling. There're 4 colors at this time.
+Super (TM) does not have a GC, so we use Borrow Checking. In many languages, for their borrow checking they use explicit typing, however, in Super (TM), we use colors to allow the programmer to focus on a group of functionality instead of trying to figure out all the special typing and syntax. Colors will adjust the compiler rules for the borrow checker to auto-coerce things into their proper types after compiling. There're 5 colors at this time.
 
 Colors:
 - Red (Standard Mutable State, Synchronous, Memory Inefficient)
